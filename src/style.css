@@ -163,6 +163,13 @@ html {
   .img-fluid {
     width: 230px !important;
   }
+  .img-home-main img.img-fluid {
+    width: min(230px, 85vw) !important;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
   .img-home-main{
     width: 100% !important;
     text-align: center !important;
@@ -181,6 +188,17 @@ html {
 .logo {
   height: 1.8em !important;
   width: 1.8em !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-home-main img.img-fluid {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: min(384px, 85vw) !important;
+  height: auto;
+  max-height: none;
 }
 
 .navbar-nav .nav-link {

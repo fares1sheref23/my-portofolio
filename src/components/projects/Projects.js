@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
-import ci from "../../images/onboarding.png";
-import hd from "../../images/hd.png";
-import pp from "../../images/portfolio.png";
+import aakha from "../../images/aakha.png";
+import cenimams from "../../images/cenimams.png";
+import fluttershop from "../../images/fluttershop.png";
+import phpproject from "../../images/phpproject.png";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -36,14 +36,12 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      New Year CountDown
+                      AAKhadanaty App: Home Services Web Application
                     </h5>
-                    <img src={nyc} alt={nyc} />
+                    <img src={aakha} alt={aakha} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Web_Programming/tree/main/New-Year-Countdown"
-                        }
+                        href={"https://aakhadanaty-app.vercel.app/"}
                         target="_blank"
                         rel="noreferrer"
                         className={"iconBtn"}
@@ -66,12 +64,14 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      The New Year Countdown Project is more than just a
-                      celebration; it's a testament to the human spirit and our
-                      shared aspirations for a brighter future. So, mark your
-                      calendars and get ready to be part of this global
-                      extravaganza as we count down to a new year filled with
-                      endless possibilities.
+                      A comprehensive home services web application designed to
+                      seamlessly connect users with a network of trusted service
+                      providers, including electricians, plumbers, AC
+                      technicians, and home cleaners. The platform facilitates
+                      service browsing, appointment booking, and provider rating
+                      for users, while empowering service providers with
+                      efficient request management and job tracking
+                      functionalities.
                     </p>
                   </h6>
                   <div
@@ -82,7 +82,8 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, JavaScript
+                    MERN Stack (MongoDB, Express.js, React, Node.js), HTML, CSS,
+                    JavaScript
                   </div>
                 </div>
               </Fade>
@@ -99,13 +100,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Heart Disease Prediction
+                      Flutter E-commerce Mobile Application
                     </h5>
-                    <img src={hd} alt={hd} />
+                    <img src={fluttershop} alt={fluttershop} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Machine_Learning/tree/main/Heart%20Disease%20Prediction"
+                          "https://github.com/fares1sheref23/shopping_project_exam"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -129,11 +130,11 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Use of AI and Machine Learning: Artificial intelligence
-                      and machine learning are already being used in healthcare
-                      to help predict heart disease. In the future, these
-                      technologies could become more advanced, enabling more
-                      accurate predictions of heart disease risk.
+                      A robust and user-friendly e-commerce mobile application
+                      developed with Flutter, providing a seamless shopping
+                      experience. This project demonstrates proficiency in
+                      mobile application development and cross-platform
+                      compatibility.
                     </p>
                   </h6>
                   <div
@@ -144,7 +145,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    Pandas, Matplotlib, Scikit-Learn
+                    Dart, Flutter
                   </div>
                 </div>
               </Fade>
@@ -161,14 +162,12 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Online Payroll Management System
+                      Cinema Management System: Backend & RESTful API
                     </h5>
-                    <img src={ci} alt={ci} />
+                    <img src={cenimams} alt={cenimams} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Online-Payroll-Management-System"
-                        }
+                        href={"#"}
                         target="_blank"
                         rel="noreferrer"
                         className={"iconBtn"}
@@ -191,11 +190,17 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      A Payroll management System with feature like generate
-                      payslip & reports. It manages salaries, leaves, branches,
-                      employees, designations, shifts, holidays and employee
-                      attendance. It has chat application so internal employees
-                      can use that feature.
+                      Developed a scalable backend and RESTful API for a
+                      comprehensive cinema management system. Key features
+                      include robust management of movies, showtimes, bookings,
+                      user accounts, and payment processing. The architecture
+                      leverages Onion Architecture for clear separation of
+                      concerns, maintainability, and scalability, alongside an
+                      optimized SQL Server relational database schema with
+                      proper indexing. Implementation adheres to industry best
+                      practices, incorporating the Repository Pattern,
+                      Dependency Injection, and a multi-layer architectural
+                      design.
                     </p>
                   </h6>
                   <div
@@ -206,7 +211,8 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    CSS, JavaScript, PHP, SCSS
+                    .NET Web API, SQL Server, Entity Framework Core, Onion
+                    Architecture
                   </div>
                 </div>
               </Fade>
@@ -223,14 +229,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Personal Portfolio
+                      Logic Gates & Numeric Systems Simulator: Educational Web
+                      Tool
                     </h5>
-                    <img src={pp} alt={pp} />
+                    <img src={phpproject} alt={phpproject} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Personal-Portfolio"
-                        }
+                        href={"https://github.com/fares1sheref23/PHP-Fares"}
                         target="_blank"
                         rel="noreferrer"
                         className={"iconBtn"}
@@ -253,9 +258,14 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Welcome to my personal portfolio. Explore my work, skills,
-                      and achievements in a concise and visually appealing
-                      format. Get a glimpse of my expertise and creativity.
+                      An interactive educational web tool designed to enhance
+                      student understanding of number systems and digital logic.
+                      This project features a Numeric Systems Converter
+                      supporting Binary, Decimal, Hexadecimal, and Octal with
+                      step-by-step explanations, and provides real-time
+                      simulation for various logic gates (AND, OR, NOT, NAND,
+                      NOR, XOR, etc. ) with engaging visualizations. The project
+                      is fully documented and published on GitHub.
                     </p>
                   </h6>
                   <div
@@ -266,7 +276,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, SCSS, React, JavaScript
+                    PHP, HTML, CSS, JavaScript
                   </div>
                 </div>
               </Fade>

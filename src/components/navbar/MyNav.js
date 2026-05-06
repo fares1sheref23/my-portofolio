@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -11,6 +10,8 @@ import {
 import { FaBlog } from "react-icons/fa";
 import "../../style.css";
 import { CgFileDocument } from "react-icons/cg";
+import { name, sourceRepoUrl } from "../../portfolioContent";
+
 export default function MyNav() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -44,7 +45,7 @@ export default function MyNav() {
                 color: "#fbd9ad",
               }}
             >
-              MD MAFUJUL HASAN
+              {name.nav}
             </h5>
           </div>
         </Navbar.Brand>
@@ -92,16 +93,6 @@ export default function MyNav() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/certificatepage"
-                onClick={() => updateExpanded(false)}
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Certifications
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
                 to="/blogs"
                 onClick={() => updateExpanded(false)}
               >
@@ -111,7 +102,7 @@ export default function MyNav() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/MD-MAFUJUL-HASAN/Personal-Portfolio"
+                href={sourceRepoUrl}
                 target="_blank"
                 className="fork-btn-inner"
               >

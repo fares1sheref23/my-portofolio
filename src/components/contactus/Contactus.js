@@ -6,6 +6,7 @@ import { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { contact, social } from "../../portfolioContent";
 
 export default function Contactus() {
   const [formData, setFormData] = useState(new FormData());
@@ -25,7 +26,7 @@ export default function Contactus() {
     try {
       const response = await axios.post(
         "http://localhost:5000/api/submitForm",
-        formData
+        formData,
       );
       console.log(response.data.message); // Log the response from the backend
 
@@ -117,53 +118,56 @@ export default function Contactus() {
                 </Col>
                 <Col md={7}>
                   <div className="contacts-details">
-                    <a
-                      href={`mailto:mdtonmoy13.mt@gmail.com`}
-                      className="personal-details"
-                    >
+                    <a href={social.email} className="personal-details">
                       <div className="detailsIcon">
                         <FiAtSign />
                       </div>
-                      <p style={{ color: "#fbd9ad" }}>
-                        mdtonmoy13.mt@gmail.com
-                      </p>
+                      <p style={{ color: "#fbd9ad" }}>{contact.emailDisplay}</p>
                     </a>
-                    <a
-                      href={`tel:+880 1603-550521`}
-                      className="personal-details"
-                    >
-                      <div className="detailsIcon">
-                        <FiPhone />
-                      </div>
-                      <p style={{ color: "#fbd9ad" }}>+880 1603-550521</p>
-                    </a>
-                    <a
-                      href="https://maps.app.goo.gl/iUHJvPAhJXwJayo68"
-                      className="personal-details"
-                    >
-                      <div className="personal-details">
+                    {contact.phoneDisplay ? (
+                      <a
+                        href={`tel:${contact.phoneTel || contact.phoneDisplay}`}
+                        className="personal-details"
+                      >
                         <div className="detailsIcon">
-                          <HiOutlineLocationMarker />
+                          <FiPhone />
                         </div>
                         <p style={{ color: "#fbd9ad" }}>
-                          BOF R/A, Gazipur Cantonment, BOF-1703, Dhaka,
-                          Bangladesh.
+                          {contact.phoneDisplay}
                         </p>
-                      </div>
-                    </a>
+                      </a>
+                    ) : null}
+                    {contact.addressDisplay && contact.mapsUrl ? (
+                      <a
+                        href={contact.mapsUrl}
+                        className="personal-details"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div className="personal-details">
+                          <div className="detailsIcon">
+                            <HiOutlineLocationMarker />
+                          </div>
+                          <p style={{ color: "#fbd9ad" }}>
+                            {contact.addressDisplay}
+                          </p>
+                        </div>
+                      </a>
+                    ) : null}
                   </div>
-                  <div className="contact-map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.833618785371!2d90.41265112695315!3d24.036931700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db9832166e63%3A0x96050e560e6dc4fa!2sBOF%20Central%20Mosque!5e0!3m2!1sen!2sbd!4v1695023265917!5m2!1sen!2sbd"
-                      frameBorder="0"
-                      allowFullScreen=""
-                      aria-hidden="false"
-                      title="Contact Me"
-                      tabIndex="0"
-                      loading="lazy"
-                      className=""
-                    ></iframe>
-                  </div>
+                  {contact.mapEmbedUrl ? (
+                    <div className="contact-map">
+                      <iframe
+                        src={contact.mapEmbedUrl}
+                        frameBorder="0"
+                        allowFullScreen=""
+                        aria-hidden="false"
+                        title="Contact Me"
+                        loading="lazy"
+                        className=""
+                      ></iframe>
+                    </div>
+                  ) : null}
                 </Col>
               </Row>
             </Col>

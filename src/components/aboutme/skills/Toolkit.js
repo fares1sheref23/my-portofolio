@@ -1,11 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import vs from "../../../images/Vs.png";
-import pc from "../../../images/pc.png";
+import vscommunity from "../../../images/vsco.png";
+import ssms from "../../../images/ssms.png";
 import git from "../../../images/git.png";
 import github from "../../../images/github.png";
 import cb from "../../../images/cb.png";
-import pg from "../../../images/pg.png";
 import pm from "../../../images/pm.png";
 import chrome from "../../../images/chorme.svg";
 import { Link } from "react-router-dom";
@@ -30,38 +29,32 @@ export default function Toolkit() {
       </Zoom>
       <Container className="mt-4">
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={vs} alt="" style={{ width: "85%", height: "85%" }} />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={pc} alt="" style={{ width: "85%", height: "85%" }} />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={git} alt="" style={{ width: "85%", height: "85%" }} />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img
-              src={github}
-              alt=""
-              style={{
-                width: "85%",
-                height: "85%",
-                filter: "grayscale(1) invert(1)",
-              }}
-            />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={cb} alt="" style={{ width: "95%", height: "95%" }} />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={pg} alt="" style={{ width: "95%", height: "95%" }} />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={pm} alt="" style={{ width: "95%", height: "95%" }} />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <img src={chrome} alt="" style={{ width: "95%", height: "95%" }} />
-          </Col>
+          {[
+            {
+              label: "VS Community",
+              img: vscommunity,
+              alt: "Visual Studio Community",
+            },
+            { label: "SQL Server", img: ssms, alt: "SQL Server SSMS" },
+            { label: "Git", img: git, alt: "Git" },
+            {
+              label: "GitHub",
+              img: github,
+              alt: "GitHub",
+              style: { filter: "grayscale(1) invert(1)" },
+            },
+            { label: "Code Blocks", img: cb, alt: "Code Blocks" },
+            { label: "Project Management", img: pm, alt: "Project Management" },
+            { label: "Chrome", img: chrome, alt: "Chrome" },
+          ].map((tool, index) => (
+            <Col xs={4} md={2} className="tech-icons" key={index}>
+              <img
+                src={tool.img}
+                alt={tool.alt || tool.label}
+                style={{ width: "85%", height: "85%", ...(tool.style || {}) }}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>

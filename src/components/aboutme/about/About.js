@@ -4,15 +4,14 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
+import { about, name } from "../../../portfolioContent";
+
 const About = () => {
   return (
     <div>
       <Container>
-        {/* <Slide left > */}
         <Row className="mt-5">
           <Col md={5}>
-            {/* <GreetingLottie animationPath="/lottie/coding.json" /> */}
-
             <Slide left>
               <lottie-player
                 src="https://assets5.lottiefiles.com/packages/lf20_iv4dsx3q.json"
@@ -28,41 +27,33 @@ const About = () => {
           <Col md={7}>
             <Fade duration={3000}>
               <p className="home-about-body">
-                My name is <b className="purple">MD Mafujul Hasan </b> 
-                  and I am a <b className="purple">Computer Science and Engineering </b> 
-                    student at <b className="purple">Sonargaon University </b>
-                      in Dhaka, Bangladesh.
+                My name is <b className="purple">{name.about}</b>. I am a{" "}
+                <b className="purple">full stack web developer</b>, a{" "}
+                <b className="purple">Flutter</b> developer, and a{" "}
+                <b className="purple">.NET backend</b> developer.
                 <br />
                 <br />
-                        I am proficient in various programming languages such as &nbsp;
-                  <b className="purple">
-                    {" "}
-                    C, C++, Java, Python, HTML, CSS, PHP, and JavaScript.{" "}
-                  </b>
+                I work with languages such as&nbsp;
+                <b className="purple">{about.languages}</b>
                 <br />
                 <br />
-                I also have experience working with frameworks and libraries such as &nbsp;
-
-                  <b className="purple">
-                    {" "}
-                    NodeJS, ReactJS, OpenCV, Pandas, and NumPy.{" "}
-                  </b>
+                Across projects I use frameworks and tools such as&nbsp;
+                <b className="purple">{about.frameworks}</b>
                 <br />
                 <br />
-                Whenever possible, I also apply my passion for developing
-                products with &nbsp;
-                  <b className="purple">
-                    {" "}
-                    Modern Javascript Library and Frameworks.
-                  </b>
+                I enjoy shipping complete features end to end — from web and
+                mobile clients to APIs and services on the backend.
                 <br />
-                <br />In my free time, I enjoy learning new technologies and &nbsp;
-                  <b className="purple">building new web technologies and products. </b>
+                <br />
+                Whenever I can, I focus on{" "}
+                <b className="purple">
+                  clean architecture, solid UX, and reliable .NET and Flutter
+                  delivery.
+                </b>
               </p>
             </Fade>
           </Col>
         </Row>
-        {/* </Slide> */}
       </Container>
     </div>
   );

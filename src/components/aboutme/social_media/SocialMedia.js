@@ -1,13 +1,13 @@
 import React from "react";
 import {
   AiOutlineInstagram,
-  AiFillFacebook,
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
 import { Container, Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
+import { social } from "../../../portfolioContent";
 
 export default function SocialMedia() {
   return (
@@ -16,10 +16,10 @@ export default function SocialMedia() {
         <h1>Connect with me</h1>
       </Zoom>
       <Container className="mt-5">
-        <Row className="g-5">
-          <Col md={3}>
+        <Row className="g-5 justify-content-center">
+          <Col md={4} className="text-center">
             <a
-              href="https://www.instagram.com/_md_mafujul_hasan_/"
+              href={social.instagram}
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"
@@ -29,21 +29,9 @@ export default function SocialMedia() {
               </Zoom>
             </a>
           </Col>
-          <Col md={3}>
+          <Col md={4} className="text-center">
             <a
-              href="https://www.facebook.com/mh.tonmoy.13"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-colour  home-social-icons"
-            >
-              <Zoom cascade>
-                <AiFillFacebook />
-              </Zoom>
-            </a>
-          </Col>
-          <Col md={3}>
-            <a
-              href="https://github.com/MD-MAFUJUL-HASAN"
+              href={social.github}
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"
@@ -53,9 +41,9 @@ export default function SocialMedia() {
               </Zoom>
             </a>
           </Col>
-          <Col md={3}>
+          <Col md={4} className="text-center">
             <a
-              href="https://www.linkedin.com/in/md-mafujul-hasan/"
+              href={social.linkedin}
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"

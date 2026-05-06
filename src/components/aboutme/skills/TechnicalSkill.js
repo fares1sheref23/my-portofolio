@@ -22,268 +22,132 @@ export default function TechnicalSkill() {
       </Tada>
       <div className="mt-5">
         <Container>
-          <Row className="g-5">
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#fe3e57", fontWeight: 700 }}
-              >
-                75%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"com"}
-                    aria-valuenow={"85"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-                <h2
+          <Row className="g-4">
+            {[
+              {
+                title: "Programming Languages",
+                items: [
+                  "C++",
+                  "C#",
+                  "JavaScript (Web & Full Stack development)",
+                  "Dart (Flutter)",
+                ],
+                borderColor: "#fe3e57",
+              },
+              {
+                title: "Web Development",
+                items: [
+                  "ASP.NET MVC",
+                  "ASP.NET Web API",
+                  "HTML / CSS / JavaScript (Web Fundamentals)",
+                  "React.js",
+                  "MERN Stack (MongoDB, Express, React, Node.js)",
+                ],
+                borderColor: "#54faae",
+              },
+              {
+                title: "Mobile Development",
+                items: [
+                  "Flutter Development",
+                  "Cross-platform mobile app development",
+                ],
+                borderColor: "#39c4ff",
+              },
+              {
+                title: "Databases",
+                items: [
+                  "SQL Server",
+                  "Database fundamentals (design & queries)",
+                  "Basic data modeling",
+                ],
+                borderColor: "#f1f965",
+              },
+              {
+                title: "Software Engineering Concepts",
+                items: [
+                  "Object-Oriented Programming (OOP)",
+                  "Data Structures basics",
+                  "Software Development Life Cycle (SDLC)",
+                  "Agile methodology",
+                ],
+                borderColor: "#ff0173",
+              },
+              {
+                title: "Testing & Quality Assurance",
+                items: [
+                  "Software Testing basics",
+                  "Bug tracking using Jira",
+                  "QA processes in real environments",
+                ],
+                borderColor: "#ff8c2f",
+              },
+              {
+                title: "Tools & Platforms",
+                items: [
+                  "Visual Studio / Visual Studio Code",
+                  "Git & Version Control",
+                  "Jira (issue tracking)",
+                  "API testing & debugging tools",
+                ],
+                borderColor: "#41f2ff",
+              },
+              {
+                title: "Systems & Embedded Knowledge",
+                items: ["Internet of Things (IoT)", "Embedded Systems basics"],
+                borderColor: "#fe3e57",
+              },
+              {
+                title: "Practical Skills",
+                items: [
+                  "Full-stack web application development",
+                  "API integration (frontend + backend)",
+                  "Real-world project development",
+                  "Freelance / paid project experience",
+                  "AI-assisted development (modern workflow)",
+                ],
+                borderColor: "#54faae",
+              },
+            ].map((category, index) => (
+              <Col md={4} key={index}>
+                <div
                   style={{
-                    color: "#fe3e57",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
+                    border: `2px solid ${category.borderColor}`,
+                    borderRadius: "16px",
+                    padding: "30px 20px",
+                    minHeight: "280px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                   }}
                 >
-                  C
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
-              >
-                75%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"pm"}
-                    aria-valuenow={"85"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "85%" }}
-                  ></div>
+                  <div>
+                    <h2
+                      style={{
+                        color: category.borderColor,
+                        fontSize: "24px",
+                        fontWeight: 700,
+                        marginBottom: "16px",
+                      }}
+                    >
+                      {category.title}
+                    </h2>
+                    <ul
+                      style={{
+                        color: "#f2f2f2",
+                        paddingLeft: "18px",
+                        margin: 0,
+                      }}
+                    >
+                      {category.items.map((item, itemIndex) => (
+                        <li key={itemIndex} style={{ marginBottom: "8px" }}>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <h2
-                  style={{
-                    color: "#54faae",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  C++
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#39c4ff", fontWeight: 700 }}
-              >
-                80%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"cr"}
-                    aria-valuenow={"90"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#39c4ff",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  Python
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#f1f965", fontWeight: 700 }}
-              >
-                71%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"aa"}
-                    aria-valuenow={"81"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "81%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#f1f965",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  Javascript
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#ff0173", fontWeight: 700 }}
-              >
-                68%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"org"}
-                    aria-valuenow={"88"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "88%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#ff0173",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  MySQL
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#ff8c2f", fontWeight: 700 }}
-              >
-                66%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"ps"}
-                    aria-valuenow={"86"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "86%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#ff8c2f",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  NodeJS
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#41f2ff", fontWeight: 700 }}
-              >
-                78%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"react"}
-                    aria-valuenow={"86"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "86%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#41f2ff",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  React js
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#fe3e57", fontWeight: 700 }}
-              >
-                75%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"com"}
-                    aria-valuenow={"85"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#fe3e57",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  PHP
-                </h2>
-              </div>
-            </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
-              >
-                75%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"pm"}
-                    aria-valuenow={"85"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#54faae",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  JAVA
-                </h2>
-              </div>
-            </Col>
+              </Col>
+            ))}
           </Row>
         </Container>
       </div>

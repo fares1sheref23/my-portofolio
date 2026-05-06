@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b0d8901c.css",
+    "main.js": "/static/js/main.e9a0ff0e.js",
+    "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/aakha.png": "/static/media/aakha.139c4a8afd47b978fff7.png",
+    "static/media/phpproject.png": "/static/media/phpproject.ec1215adaa30b8ad723b.png",
+    "static/media/cenimams.png": "/static/media/cenimams.afe875886cd8a7a1a0ce.png",
+    "static/media/FARES_SHEREF_GAMIL_FlowCV_Resume_202a6-04-27 (1).pdf": "/static/media/FARES_SHEREF_GAMIL_FlowCV_Resume_202a6-04-27 (1).93e67d18bf78094bd2d9.pdf",
+    "static/media/github.png": "/static/media/github.345dc4a21070f9083ca7.png",
+    "static/media/fluttershop.png": "/static/media/fluttershop.37448e05f51f057946d0.png",
+    "static/media/ssms.png": "/static/media/ssms.bb917c97995abf690308.png",
+    "static/media/pre.svg": "/static/media/pre.e4c81c26304bc309eb55.svg",
+    "static/media/h3.jpg": "/static/media/h3.dc52d5d40a40b13154b0.jpg",
+    "static/media/vsco.png": "/static/media/vsco.89e889a9a15c031c6a94.png",
+    "static/media/chorme.svg": "/static/media/chorme.76eb99c03649b560eca4188fff132dcf.svg",
+    "index.html": "/index.html",
+    "main.b0d8901c.css.map": "/static/css/main.b0d8901c.css.map",
+    "main.e9a0ff0e.js.map": "/static/js/main.e9a0ff0e.js.map",
+    "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0d8901c.css",
+    "static/js/main.e9a0ff0e.js"
+  ]
+}

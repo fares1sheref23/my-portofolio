@@ -33,52 +33,73 @@ function ExperienceJourney() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          position="left"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderLeft: "7px solid  rgb(78 22 112)" }}
-          date="2023 - Continuing"
+          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          date="2023 - 2024"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<PersonIcon />}
         >
           <h5 className="vertical-timeline-element-title">
-            Study World
+            FOUNDATION EXPERIENCE
           </h5>
           <h6 className="vertical-timeline-element-subtitle mt-2">
-            Branch Manager & Student Counsellor
+            EVA International Applied School & EVA Pharma
           </h6>
-          <p>• Provide Education Counselling to students and guardians for study abroad.</p>
-          <p>• Providing information about Universities/Colleges, Course/Fees, Admissions, Visa procedures etc.</p>
-          <p>• Effective follow-ups with the prospective students/guardians.</p>
-          <p>• Provide daily, Weekly, monthly, and yearly reporting about all operational activities.</p>
-          <p>• Processing student visa applications based on entry requirements and admissions procedures and 
-            enhance their chances of success in interviews by developing their skills.</p>
-          <p>• Preparing applications for admission into different foreign universities.</p>
+          <p>QA Testing training at EVA Pharma company</p>
+          <p>Learned bug tracking using Jira</p>
+          <p>Introduction to Agile methodology</p>
+          <p>Attended sessions about Software Development Life Cycle (SDLC)</p>
+          <p>Gained basic understanding of real-world software workflow</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          position="right"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date="2021 - 2022"
+          contentArrowStyle={{ borderLeft: "7px solid  rgb(78 22 112)" }}
+          date="2024 - 2025"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<PersonIcon />}
         >
           <h5 className="vertical-timeline-element-title">
-            Excel Telecom (Pvt.) Limited - (National Distributor of SAMSUNG in Bangladesh)
+            PRACTICAL DEVELOPMENT EXPERIENCE
           </h5>
           <h6 className="vertical-timeline-element-subtitle mt-2">
-            Management of Information System
+            Training & Real Projects
           </h6>
-          <p>• Proficient in developing, deploying and managing computerized systems that gather, retain, evaluate and exhibit 
-            data to facilitate the achievement of organizational aims and objectives.</p>
-          <p>• Proficient in collecting and organizing data from diverse sources, utilizing statistical techniques and software 
-            tools for data analysis and creating comprehensive reports and presentations that showcase significant insights and trends.</p>
-          <p>• Consistently completed assigned tasks in a timely and efficient manner as directed by management, while maintaining 
-            effective communication between the company and employees.</p>
-          <p>• Proficient in monitoring daily business operation costs, verifying and evaluating accounting transactions updates, 
-            and providing corresponding reports to top management.</p>
-          <p>• Skilled in collecting and compiling monthly reports, conducting inventory analysis for month-end, quarterly, 
-            and year-end closing, and submitting reports in accordance with management requirements.</p>
-          <p>• Proficient in developing and maintaining various reporting dashboard, technical support to end-users, 
-            diagnosing hardware and software issues, and collaborating with IT teams to promptly resolve system-related problems.</p>
+          <p>Training in API development and Web Applications</p>
+          <p>Introduction to Flutter development</p>
+          <p>Worked on paid real-world projects</p>
+          <p>Applied backend and frontend integration</p>
+          <p>Improved debugging and development skills</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          position="left"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          date="2025 - 2026"
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<PersonIcon />}
+        >
+          <h5 className="vertical-timeline-element-title">
+            SELF-DEVELOPMENT & PROFESSIONAL WORK
+          </h5>
+          <h6 className="vertical-timeline-element-subtitle mt-2">
+            Independent Learning & Freelance Work
+          </h6>
+          <p>Self-learned React.js and MERN Stack</p>
+          <p>
+            Practiced modern development approaches (including AI-assisted
+            coding / vibe coding)
+          </p>
+          <p>Worked on real paid website projects</p>
+          <p>Developed full-stack applications</p>
+          <p>Improved soft skills:</p>
+          <p>• Teamwork</p>
+          <p>• Communication</p>
+          <p>• Problem-solving</p>
+          <p>• Working in real environments</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

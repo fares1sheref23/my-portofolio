@@ -1,16 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { typewriterRoles } from "../../portfolioContent";
 
 function Typing() {
     return (
         <Typewriter
             options={{
-                strings: [
-                    "Developer",
-                    "Software Engineer",
-                    "Frontend Developer",
-                    "Backend Developer",
-                ],
+                strings: typewriterRoles,
                 autoStart: true,
                 loop: true,
                 deleteSpeed: 50,

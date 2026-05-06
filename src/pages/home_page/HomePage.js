@@ -6,10 +6,10 @@ import Tilt from "react-parallax-tilt";
 import AboutmeContainer from "../../components/aboutme/aboutmeContainer";
 import Fade from "react-reveal/Fade";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn, FaFacebookF, FaGoogle } from "react-icons/fa";
-import Certification from "../../components/certificate/Certification";
+import { FaLinkedinIn, FaGoogle } from "react-icons/fa";
 import Projects from "../../components/projects/Projects";
 import Contactus from "../../components/contactus/Contactus";
+import { name, social } from "../../portfolioContent";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> MD MAFUJUL HASAN</strong>
+                <strong className="main-name"> {name.hero}</strong>
               </h1>
 
               <div className="typing-homeclass">
@@ -41,7 +41,7 @@ export default function Home() {
                 <ul className="homeaboutsociallinks">
                   <li className="socialicons">
                     <a
-                      href="https://github.com/MD-MAFUJUL-HASAN"
+                      href={social.github}
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour  homesocialicons"
@@ -51,7 +51,7 @@ export default function Home() {
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.linkedin.com/in/md-mafujul-hasan/"
+                      href={social.linkedin}
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour  homesocialicons"
@@ -61,7 +61,7 @@ export default function Home() {
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.instagram.com/_md_mafujul_hasan_/"
+                      href={social.instagram}
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour homesocialicons"
@@ -71,17 +71,7 @@ export default function Home() {
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.facebook.com/mh.tonmoy.13"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="iconcolour homesocialicons"
-                    >
-                      <FaFacebookF />
-                    </a>
-                  </li>
-                  <li className="socialicons">
-                    <a
-                      href="mailto:mdtonmoy13.mt@gmail.com/"
+                      href={social.email}
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour homesocialicons"
@@ -109,7 +99,6 @@ export default function Home() {
         </Container>
       </Container>
       <AboutmeContainer />
-      <Certification />
       <Projects />
       <Contactus />
     </section>
