@@ -8,11 +8,20 @@ import cenimams from "../../images/cenimams.png";
 import fluttershop from "../../images/fluttershop.png";
 import phpproject from "../../images/phpproject.png";
 import { FaCode } from "react-icons/fa";
+/**
+ * Project listing page.
+ *
+ * Note: the four <Col> blocks are intentionally verbose to keep the JSX
+ * straightforward for contributors.
+ */
 export default function ProjectPage() {
   return (
     <section className="home-section">
+      {/* Background particle effect */}
       <Container fluid id="home">
         <Particle />
+
+        {/* Page content */}
         <Container className="home-content">
           <div
             className="d-flex justify-content-center"
@@ -20,11 +29,14 @@ export default function ProjectPage() {
             style={{ backgroundColor: "#fbd9ad" }}
           >
             <Zoom left cascade>
+              {/* Section title */}
               <h1 style={{ color: "rgb(134 61 176" }}>PROJECTS</h1>
             </Zoom>
           </div>
+
           <div>
             <div>
+              {/* Wrapper section (keeps styling consistent with other pages) */}
               <Container fluid className="certificate-section" id="about">
                 <Container>
                   <Row>
