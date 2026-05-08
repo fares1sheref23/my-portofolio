@@ -235,7 +235,7 @@ export default function Projects() {
                     <img src={phpproject} alt={phpproject} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={"https://github.com/fares1sheref23/PHP-Fares"}
+                        href={"https://fares1sheref23.github.io/PHP-Fares/"}
                         target="_blank"
                         rel="noreferrer"
                         className={"iconBtn"}
