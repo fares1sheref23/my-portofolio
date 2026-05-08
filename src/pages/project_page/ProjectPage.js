@@ -189,7 +189,7 @@ export default function ProjectPage() {
                                 <img src={cenimams} alt={cenimams} />
                                 <div className="project--showcaseBtn">
                                   <a
-                                    href={"#"}
+                                    href={"https://github.com/fares1sheref23"}
                                     target="_blank"
                                     rel="noreferrer"
                                     className={"iconBtn"}
