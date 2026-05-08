@@ -4,7 +4,10 @@
 
 A modern and responsive personal portfolio built with **React.js**.
 
+## 🔗 Live Preview
+👉 [View Live Portfolio](https://my-portofolio-nu-lac.vercel.app/)
 
+---
 
 ## ✨ Features
 - Fully responsive design
@@ -15,7 +18,9 @@ A modern and responsive personal portfolio built with **React.js**.
 - Contact form
 - Mobile-friendly
 
-## Getting Started with Create React App
+---
+
+## 🚀 Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,42 +28,38 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
+#### `npm start`
+Runs the app in development mode.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.
 
-### `npm test`
+#### `npm test`
+Launches the test runner in interactive watch mode.
 
-Launches the test runner in the interactive watch mode.
-
-### `npm run build`
-
+#### `npm run build`
 Builds the app for production to the `build` folder.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
----
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### `npm run eject`
+⚠️ **Note:** This is a one-way operation. Once you eject, you can’t go back.
 
 ---
 
-## Technologies Used
+## 📚 Learn More
+
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React Documentation](https://reactjs.org/)
+
+---
+
+## 🛠️ Technologies Used
 - React.js
 - CSS3 / SCSS
 - React Router
-- etc. (add your stack)
 
-## Author
+---
+
+## 👤 Author
 **Fares Sheref**
 
 ---
